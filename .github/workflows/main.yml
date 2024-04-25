@@ -22,4 +22,5 @@ jobs:
           echo "github.action_path = ${{ github.action_path }}"
           echo "github.path = ${{ github.path }}"
           source echo.sh
+          ls
         shell: bash
