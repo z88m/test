@@ -17,5 +17,6 @@ jobs:
           echo "GITHUB_JOB = $GITHUB_JOB"
           echo "GITHUB_REF = $GITHUB_REF"
           echo "GITHUB_ACTION_PATH = $GITHUB_ACTION_PATH"
+          echo "github.action_path = ${{ github.action_path }}"
           source ${GITHUB_WORKSPACE}/echo.sh
         shell: bash
