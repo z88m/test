@@ -5,7 +5,7 @@ on:
   push:
     branches: [ "main" ]
 jobs:
-  test:
+  test_job:
     runs-on: ubuntu-latest
     steps:
       - name: echo hello world
@@ -17,5 +17,5 @@ jobs:
           echo "GITHUB_JOB = $GITHUB_JOB"
           echo "GITHUB_REF = $GITHUB_REF"
           echo "GITHUB_ACTION_PATH = $GITHUB_ACTION_PATH"
-          source dir/echo.sh
+          source ${GITHUB_WORKSPACE}/echo.sh
         shell: bash
