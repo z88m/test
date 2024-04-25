@@ -1,0 +1,10 @@
+name: "mydemo"
+description: ""
+
+runs:
+  using: "composite"
+  steps:
+    - name: echo hello world
+      run: |
+        source ${{ github.action_path }}/echo.sh
+      shell: bash
