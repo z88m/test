@@ -17,5 +17,5 @@ jobs:
           echo "GITHUB_JOB = $GITHUB_JOB"
           echo "GITHUB_REF = $GITHUB_REF"
           echo "GITHUB_ACTION_PATH = $GITHUB_ACTION_PATH"
-          source .github/workflows/echo.sh
+          source echo.sh
         shell: bash
