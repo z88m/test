@@ -10,5 +10,12 @@ jobs:
     steps:
       - name: echo hello world
         run: |
+          echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
+          echo "GITHUB_WORKFLOW = $GITHUB_WORKFLOW"
+          echo "GITHUB_REPOSITORY = $GITHUB_REPOSITORY"
+          echo "GITHUB_EVENT_NAME = $GITHUB_EVENT_NAME"
+          echo "GITHUB_JOB = $GITHUB_JOB"
+          echo "GITHUB_REF = $GITHUB_REF"
+          echo "GITHUB_ACTION_PATH = $GITHUB_ACTION_PATH"
           source ${GITHUB_ACTION_PATH}/echo.sh
         shell: bash
