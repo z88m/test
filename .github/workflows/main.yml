@@ -19,5 +19,5 @@ jobs:
           echo "GITHUB_ACTION_PATH = $GITHUB_ACTION_PATH"
           echo "github.action_path = ${{ github.action_path }}"
           echo "github.path = ${{ github.path }}"
-          source ${GITHUB_WORKSPACE}/echo.sh
+          source ${GITHUB_REPOSITORY}/echo.sh
         shell: bash
